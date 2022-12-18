@@ -1,16 +1,16 @@
 console.group("21. Sukurkite funkciją, kuri ištrintų pirmą surastą 'a' raidę žodyje ir grąžintų pakeistą žodį");
 {
   function removeFirstLetterA(str) {
-    // code ...
-  }
-  // console.log('---');
-  // console.log({
-  //   'labas': removeFirstLetterA('labas'),
-  //   'kempiniukas': removeFirstLetterA('kempiniukas'),
-  //   '123123': removeFirstLetterA('123123'),
-  // })
-  // console.log('---');
+for (let i = 0; i < str.length; i++) {
+  console.log(str[i])
 }
+  }
+  console.log({
+  'labas': removeFirstLetterA('labas'),
+  'kempiniukas': removeFirstLetterA('kempiniukas'),
+  '123123': removeFirstLetterA('123123'),
+  })
+
 console.groupEnd();
 console.log();
 
@@ -242,3 +242,4 @@ console.group("32. Sukurkite funkciją, kuri pirmu parametru priimą <string>'ą
 }
 console.groupEnd();
 console.log();
+}
