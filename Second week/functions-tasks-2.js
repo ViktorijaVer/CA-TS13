@@ -6,6 +6,13 @@ console.log('---');
 {
   function mulArrBy2(arr) {
     // ... code
+    const processedArray = [];
+
+    for (let i = 0; i < arr.length; i += 1) {
+        processedArray[i] = arr[i] * 2;
+    }
+
+    return processedArray;
   }
   console.log({
     numbers,
@@ -21,6 +28,13 @@ console.log('---');
 {
   function powerArrBy2(arr) {
     // ... code
+    const processedArray = [];
+
+    for (let i = 0; i < arr.length; i += 1) {
+        processedArray[i] = arr[i] ** 2;
+    }
+
+    return processedArray;
   }
   console.log({
     numbers,
@@ -36,6 +50,12 @@ console.log('---');
 {
   function mulArrElementsByIndex(arr) {
     // ... code
+    let multipliedNumbers = [];
+    for (let i = 0; i < arr.length; i++) {
+      let multipliedNumber = arr[i] * i;
+      multipliedNumbers.push(multipliedNumber);
+  }
+  return multipliedNumbers;
   }
   console.log({
     numbers,
@@ -55,7 +75,8 @@ console.log('---');
   // console.log({
   //   numbers,
   //   result: filterPositives(numbers)
-  // });
+  // }); 
+  // ?!? pasiduodu
 }
 console.log('---');
 console.groupEnd();
