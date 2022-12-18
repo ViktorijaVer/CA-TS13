@@ -161,177 +161,232 @@ console.groupCollapsed('WHILE');
   console.groupEnd();
   console.groupCollapsed('15. Sukurkite ciklą kuris atspausdintų 2, 4, 6, 8, 10. Tikrinant ar kintamasis yra lyginis. Naudokite liekanos operatorių');
   {
-    //?
+  let i = 2;
+  while (i <= 10) {
+  if (i % 2 == 0) {
+  console.log(i);
+  }
+  i++;}
   }
   console.groupEnd();
   console.groupCollapsed('16. Sukurkite ciklą kuris atspausdintų 4, 1, -2, -5, -8. Naudojant žingsnį -3');
   {
-    let number = 4;
-    while (number <= -8) {
-    number = number -= 3;
-    console.log(i);
-    number--;
+  let i = 4;
+  while (i >= -8) {
+  console.log(i);
+  i -= 3;
   }
   }
   console.groupEnd();
   console.groupCollapsed('17. Sukurkite ciklą kuris atspausdintų 3, 0, -3, -6, -9. Tikrinant ar kintamojo liekana dalinant iš 3 yra lygi 0?');
   {
-    //?
+  let i = 3;
+  while (i >= -9) {
+  if (i % 3 == 0) { 
+  console.log(i);
+  }
+  i -= 3;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('18. Sukurkite ciklą kuris atspausdintų 2, 0, -2, -4, -6. Naudojant kintamojo liekaną');
   {
-    //?
+  let i = 2;
+  while (i >= -6) {
+  if (i % 2 == 0) {
+  console.log(i);
+  }
+  i -= 2;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('19. Sukurkite ciklą kuris atspausdintų 2, -1, -4, -7, -10. Naudojant kintamojo liekaną');
   {
-    //?
+  let i = 2;
+  while (i >= -10) {
+  if (i % 2 == 0) {
+  console.log(i);
+  }
+  i -= 3;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('20. Atspausdinkite <numbers> masyvo elementus nuo pirmo iki paskutinio');
   {
-    index = 0;
-    array = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
-    while (index < array.length) {
-        console.log(array[index]);
-        index++;
-    }
-}
+  let i = 0;
+  while (i < numbers.length) {
+  console.log(numbers[i]);
+  i++;
+  }
+  }
   console.groupEnd();
   console.groupCollapsed('21. Atspausdinkite <numbers> masyvo elementus nuo 3 iki paskutinio');
   {
-    index = 2;
-    array = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
-    while (index < array.length) {
-        console.log(array[index]);
-        index++;
-    }
+  let i = 2;
+  while (i < numbers.length) {
+  console.log(numbers[i]);
+  i++;
   }
+  } 
   console.groupEnd();
   console.groupCollapsed('22. Atspausdinkite <numbers> masyvo elementus nuo 2 iki prieš paskutinio');
   {
-    index = 2;
-    array = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
-    while (index < array.length) {
-        console.log(array[index -1]);
-        index++;
-    }
+  let i = 1;
+  while (i < numbers.length - 1) {
+  console.log(numbers[i]);
+  i++;
+  }    
   }
   console.groupEnd();
   console.groupCollapsed('23. Atspausdinkite <numbers> masyvo elementus nuo paskutinio iki pirmo');
   {
-
+  let i = numbers.length - 1;
+  while (i >= 0) {
+  console.log(numbers[i]);
+  i--;
+  }    
   }
   console.groupEnd();
   console.groupCollapsed('24. Atspausdinkite <numbers> masyvo elementus nuo paskutinio iki antro');
   {
-    
+  let i = numbers.length - 1;
+  while (i > 0) {
+  console.log(numbers[i]);
+  i--;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('25. Atspausdinkite <numbers> masyvo elementus nuo prieš paskutinio iki trečio');
   {
-
+  let i = numbers.length - 2;
+  while (i > 2) {
+  console.log(numbers[i]);
+  i--;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('26. Atspausdinkite <numbers> masyvo kas antrą elementą iš kairės į dešinę');
   {
-
+  let i = 0;
+  while (i < numbers.length) {
+  console.log(numbers[i]);
+  i += 2;
+  }    
   }
   console.groupEnd();
   console.groupCollapsed('27. Atspausdinkite <numbers> masyvo kas trečią elementą iš kairės į dešinę');
   {
-
+  let i = 0;
+  while (i < numbers.length) {
+  console.log(numbers[i]);
+  i += 3;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('28. Atspausdinkite <numbers> masyvo kas antrą elementą iš kairės į dešinę, pradedant trečiu');
   {
-
+  let i = 2;
+  while (i < numbers.length) {
+  console.log(numbers[i]);
+  i += 2;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('29. Atspausdinkite <numbers> masyvo kas antrą elementą iš dešinės');
   {
-
+  let i = numbers.length - 1;
+  while (i >= 0) {
+  console.log(numbers[i]);
+  i -= 2;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('30. Atspausdinkite <numbers> masyvo kas trečią elementą iš dešinės');
   {
-
+  let i = numbers.length - 1;
+  while (i >= 0) {
+  console.log(numbers[i]);
+  i -= 3;
+  }
   }
   console.groupEnd();
   console.groupCollapsed('31. Atspausdinkite <numbers> masyvo kas antrą elementą iš dešinės, pradedant prieš paskutiniu');
   {
-
+  let i = numbers.length - 2;
+  while (i >= 0) {
+  console.log(numbers[i]);
+  i -= 2;
+  }    
   }
   console.groupEnd();
 console.groupEnd();
-  }
+}
 console.groupCollapsed('FOR');
 {
   console.groupCollapsed('1. Sukurkite ciklą kuris 5 kartus atspausdintų "Sveikas Pasauli"');
   {
-    var hello = ("Sveikas Pasauli");
-    for(var i = 1; i < 6; i++){
-        console.log(hello);
+  var hello = ("Sveikas Pasauli");
+  for(var i = 1; i < 6; i++){
+    console.log(hello);
     }
   }
   console.groupEnd();
   console.groupCollapsed('2. Sukurkite ciklą kuris atspausdintų nuo 1 iki 5. Naudojant <');
   {
-    for(var i = 1; i < 6; i++) {
-        console.log(i);
-    }
+  for(var i = 1; i < 6; i++) {
+  console.log(i);
+  }
   }
   console.groupEnd();
   console.groupCollapsed('3. Sukurkite ciklą kuris atspausdintų nuo 3 iki 7. Naudojant <');
   {
-    for(var i = 3; i < 8; i++) {
-        console.log(i);
-    }
+  for(var i = 3; i < 8; i++) {
+  console.log(i);
+  }
   }
   console.groupEnd();
   console.groupCollapsed('4. Sukurkite ciklą kuris atspausdintų nuo -3 iki 2. Naudojant <');
   {
-    for(var i = -3; i < 3; i++) {
-        console.log(i);
-    }
+  for(var i = -3; i < 3; i++) {
+  console.log(i);
+  }
   }
   console.groupEnd();
   console.groupCollapsed('5. Sukurkite ciklą kuris atspausdintų nuo 1 iki 5. Naudojant <=');
   {
-    for(var i = 1; i <= 5; i++) {
-        console.log(i);
-    }
+  for(var i = 1; i <= 5; i++) {
+  console.log(i);
+  }
   }
   console.groupEnd();
   console.groupCollapsed('6. Sukurkite ciklą kuris atspausdintų nuo 3 iki 7. Naudojant <=');
   {
-    for(var i = 3; i <= 7; i++) {
-        console.log(i);
-    }
+  for(var i = 3; i <= 7; i++) {
+  console.log(i);
+  }
   }
   console.groupEnd();
   console.groupCollapsed('7. Sukurkite ciklą kuris atspausdintų nuo -3 iki 2. Naudojant <=');
   {
-    for(var i = -3; i <= 2; i++) {
-        console.log(i);
-    }
+  for(var i = -3; i <= 2; i++) {
+  console.log(i);
+  }
   }
   console.groupEnd();
   console.groupCollapsed('8. Sukurkite ciklą kuris atspausdintų nuo 2 iki -3. Naudojant >');
   {
-    var count;
-    for (count = 2; count > -4; count--) {
-    console.log(count);
-    }
+  var count;
+  for (count = 2; count > -4; count--) {
+  console.log(count);
+  }
   }
   console.groupEnd();
   console.groupCollapsed('9. Sukurkite ciklą kuris atspausdintų nuo -5 iki -10. Naudojant >');
   {
-    var count;
-    for (count = -5; count > -11; count--) {
-    console.log(count);
-    }
+  var count;
+  for (count = -5; count > -11; count--) {
+  console.log(count);
+  }
   }
   console.groupEnd();
   console.groupCollapsed('10. Sukurkite ciklą kuris atspausdintų nuo 2 iki 1. Naudojant >');
@@ -369,124 +424,127 @@ console.groupCollapsed('FOR');
   console.groupCollapsed('14. Sukurkite ciklą kuris atspausdintų 2, 4, 6, 8, 10. Naudojant žingsnį +2');
   {
     for (var i = 2; i < 10; i += 2) {
-        console.log(i);
-       }
+    console.log(i);
+    }
   }
   console.groupEnd();
   console.groupCollapsed('15. Sukurkite ciklą kuris atspausdintų 2, 4, 6, 8, 10. Tikrinant ar kintamasis yra lyginis. Naudokite liekanos operatorių');
   {
-//??
+  for (let i = 2; i <= 10; i += 2) {
+  console.log(i);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('16. Sukurkite ciklą kuris atspausdintų 4, 1, -2, -5, -8. Naudojant žingsnį -3');
   {
-    for (var i = 4; i > -9; i -= 3) {
-        console.log(i);
-       }
+  for (let i = 4; i >= -8; i -= 3) {
+  console.log(i);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('17. Sukurkite ciklą kuris atspausdintų 3, 0, -3, -6, -9. Tikrinant ar kintamojo liekana dalinant iš 3 yra lygi 0?');
   {
-    //?
-  }
+  for (let i = 3; i >= -9; i -= 3) {
+  if (i % 3 == 0) {
+  console.log(i);}}
+  } 
   console.groupEnd();
   console.groupCollapsed('18. Sukurkite ciklą kuris atspausdintų 2, 0, -2, -4, -6. Tikrinant ar kintamojo liekana');
   {
-    //?
-  }
+  for (let i = 2; i >= -6; i -= 2) {
+  if (i % 2 == 0) { 
+  console.log(i);}
+  }}
   console.groupEnd();
   console.groupCollapsed('19. Sukurkite ciklą kuris atspausdintų 2, -1, -4, -7, -10. Tikrinant ar kintamojo liekana');
   {
-    //?
-  }
+  for (let i = 2; i >= -10; i -= 3) {
+  if (i % 2 == 0) { 
+  console.log(i);}
+  }}
   console.groupEnd();
   console.groupCollapsed('20. Atspausdinkite <numbers> masyvo elementus nuo pirmo iki paskutinio');
   {
-    var number = ["1", "2", "3", "4", "5"]
-    for(i = 0; i < number.length; i++){
-        console.log(number[i])
-    }
+  for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);}  
   }
   console.groupEnd();
   console.groupCollapsed('21. Atspausdinkite <numbers> masyvo elementus nuo 3 iki paskutinio');
   {
-    var number = ["1", "2", "3", "4", "5"]
-    for(i = 2; i < number.length; i++){
-        console.log(number[i])
-    }
+  for (let i = 2; i < numbers.length; i++) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('22. Atspausdinkite <numbers> masyvo elementus nuo 2 iki prieš paskutinio');
   {
-    var number = ["1", "2", "3", "4", "5"]
-    for(i = 1; i < number.length - 1; i++){
-        console.log(number[i])
-    }
+  for (let i = 1; i < numbers.length - 1; i++) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('23. Atspausdinkite <numbers> masyvo elementus nuo paskutinio iki pirmo');
   {
-    var arr = [1, 2, 3, 4, 5];
-    for (var i = arr.length - 1; i >= 0; i--) {
-        console.log(arr[i]);
-    }
+  for (let i = numbers.length - 1; i >= 0; i--) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('24. Atspausdinkite <numbers> masyvo elementus nuo paskutinio iki antro');
   {
-    var arr = [1, 2, 3, 4, 5];
-    for (var i = arr.length - 1; i >= 1; i--) {
-        console.log(arr[i]);
-    }
+  for (let i = numbers.length - 1; i > 0; i--) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('25. Atspausdinkite <numbers> masyvo elementus nuo prieš paskutinio iki trečio');
   {
-    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    for (var i = arr.length - 2; i >= 2; i--) {
-        console.log(arr[i]);
-    }
+  for (let i = numbers.length - 2; i > 2; i--) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('26. Atspausdinkite <numbers> masyvo kas antrą elementą iš kairės į dešinę');
   {
-    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    for (let i = 1; i < arr.length; i++) {
-        console.log(i +=1); 
-    }
+  for (let i = 0; i < numbers.length; i += 2) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('27. Atspausdinkite <numbers> masyvo kas trečią elementą iš kairės į dešinę');
   {
-    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    for (let i = 1; i < arr.length; i++) {
-        console.log(i +=2); }
+  for (let i = 0; i < numbers.length; i += 3) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('28. Atspausdinkite <numbers> masyvo kas antrą elementą iš kairės į dešinę, pradedant trečiu');
   {
-    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    for (let i = 2; i < arr.length - 1; i++) {
-        console.log(i +=1); 
-    }
+  for (let i = 2; i < numbers.length; i += 2) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('29. Atspausdinkite <numbers> masyvo kas antrą elementą iš dešinės');
   {
-  //?
-
+  for (let i = numbers.length - 1; i >= 0; i -= 2) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('30. Atspausdinkite <numbers> masyvo kas trečią elementą iš dešinės');
   {
- //?
+  for (let i = numbers.length - 1; i >= 0; i -= 3) {
+  console.log(numbers[i]);
+  }  
   }
   console.groupEnd();
   console.groupCollapsed('31. Atspausdinkite <numbers> masyvo kas antrą elementą iš dešinės, pradedant prieš paskutiniu');
   {
-//?
+  for (let i = numbers.length - 2; i >= 0; i -= 2) {
+  console.log(numbers[i]);
+  }
   }
   console.groupEnd();
-
-console.groupEnd();
+  console.groupEnd();
 }
