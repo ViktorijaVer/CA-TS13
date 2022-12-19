@@ -203,66 +203,144 @@ const students = [
   
   console.groupCollapsed('1. Atspausdinti visus Informatikos fakulteto studentus');
   {
-    // ... sprendimas ir spausdinimas
+    for (const student of students) {
+      if (student.faculty === 'Informatikos fakultetas') {
+        console.log(`${student.name} ${student.surname}`);
+      }
   }
+}
   console.groupEnd();
   
   console.groupCollapsed('2. Atspausdinti visus Chemijos fakulteto studentus');
   {
-    // ... sprendimas ir spausdinimas
+    for (const student of students) {
+      if (student.faculty === 'Chemijos fakultetas') {
+        console.log(`${student.name} ${student.surname}`);
+      }
+  }
   }
   console.groupEnd();
   
   console.groupCollapsed('3. Atspausdinti visus Elektros ir elektronikos fakulteto studentus');
   {
-    // ... sprendimas ir spausdinimas
+    for (const student of students) {
+      if (student.faculty === 'Elektros ir elektronikos fakultetas') {
+        console.log(`${student.name} ${student.surname}`);
+      }
+  }
   }
   console.groupEnd();
   
   console.groupCollapsed('4. Atspausdinti tik pirmo kurso studentus');
   {
-    // ... sprendimas ir spausdinimas
+    for (const student of students) {
+      if (student.course === 1) {
+        console.log(`${student.name} ${student.surname}`);
+      }
+  }
   }
   console.groupEnd();
   
   console.groupCollapsed('5. Atspausdinti tik antro kurso studentus');
   {
-    // ... sprendimas ir spausdinimas
+    for (const student of students) {
+      if (student.course === 2) {
+        console.log(`${student.name} ${student.surname}`);
+      }
+  }
   }
   console.groupEnd();
   
   console.groupCollapsed('6. Atspausdinti tik trečio kurso studentus');
   {
-    // ... sprendimas ir spausdinimas
+    for (const student of students) {
+      if (student.course === 3) {
+        console.log(`${student.name} ${student.surname}`);
+      }
+  }
   }
   console.groupEnd();
   
   console.groupCollapsed('7. Atspausdinti tik ketvirto kurso studentus');
   {
-    // ... sprendimas ir spausdinimas
+    for (const student of students) {
+      if (student.course === 4) {
+        console.log(`${student.name} ${student.surname}`);
+      }
+  }
   }
   console.groupEnd();
   
   console.groupCollapsed('8. Iš students masyvo atrinkti ir atspausdinti visų studentų vidurkius');
   {
-    // ... sprendimas ir spausdinimas
+    students.forEach(student => {
+      let totalCredits = 0;
+      let totalPoints = 0;
+    
+      student.modules.forEach(module => {
+        totalCredits += module.credits;
+        totalPoints += module.credits * (module.marks.reduce((a, b) => a + b, 0) / module.marks.length);
+      });
+    
+      const averageGrade = totalPoints / totalCredits;
+      console.log(`${student.name} ${student.surname}: ${averageGrade}`);
+    });
   }
-  
+  console.groupEnd();
   console.groupCollapsed('9. Atspausdinti visų Informatikos fakulteto studentų vidurkius');
   {
-    // ... sprendimas ir spausdinimas
+    students.forEach(student => {
+      if (student.faculty === 'Informatikos fakultetas') {
+        let totalCredits = 0;
+        let totalPoints = 0;
+    
+        student.modules.forEach(module => {
+          totalCredits += module.credits;
+          totalPoints += module.credits * (module.marks.reduce((a, b) => a + b, 0) / module.marks.length);
+        });
+    
+        const averageGrade = totalPoints / totalCredits;
+        console.log(`${student.name} ${student.surname}: ${averageGrade}`);
+      }
+    });
   }
   console.groupEnd();
   
   console.groupCollapsed('10. Atspausdinti visų Chemijos fakulteto studentų vidurkius');
   {
-    // ... sprendimas ir spausdinimas
+    students.forEach(student => {
+      if (student.faculty === 'Chemijos fakultetas') {
+        let totalCredits = 0;
+        let totalPoints = 0;
+    
+        student.modules.forEach(module => {
+          totalCredits += module.credits;
+          totalPoints += module.credits * (module.marks.reduce((a, b) => a + b, 0) / module.marks.length);
+        });
+    
+        const averageGrade = totalPoints / totalCredits;
+        console.log(`${student.name} ${student.surname}: ${averageGrade}`);
+      }
+    });
   }
   console.groupEnd();
   
   console.groupCollapsed('11. Atspausdinti visų Elektros ir elektronikos fakulteto studentų vidurkius');
   {
-    // ... sprendimas ir spausdinimas
+    students.forEach(student => {
+      if (student.faculty === 'Elektros ir elektronikos fakultetas') {
+        let totalCredits = 0;
+        let totalPoints = 0;
+    
+        student.modules.forEach(module => {
+          totalCredits += module.credits;
+          totalPoints += module.credits * (module.marks.reduce((a, b) => a + b, 0) / module.marks.length);
+        });
+    
+        const averageGrade = totalPoints / totalCredits;
+        console.log(`${student.name} ${student.surname}: ${averageGrade}`);
+      }
+    });
   }
   console.groupEnd();
   
